@@ -1,0 +1,41 @@
+{
+  "manifestVersion": 1,
+  "id": "org.stor.gallery",
+  "package": "@hearthlog/module-gallery",
+  "version": "1.0.0",
+  "compatibility": { "moduleApi": 1 },
+  "features": [
+    {
+      "id": "gallery",
+      "path": "/gallery",
+      "label": "Gallery",
+      "subtitle": "Private photos and albums",
+      "keywords": "photos gallery pictures albums favorites",
+      "navGroup": "Life",
+      "icon": "image-multiple-outline",
+      "navOrder": 50
+    }
+  ],
+  "routes": [
+    { "path": "/gallery", "page": "./src/pages/gallery.svelte", "load": "./src/pages/gallery.ts", "fitsScreen": true }
+  ],
+  "data": {
+    "definitions": "./src/data/definitions.ts",
+    "repositories": "./src/data/repositories.ts"
+  },
+  "projectionVersion": 1,
+  "startup": "./src/startup.ts",
+  "server": {
+    "entry": "./src/server/index.ts",
+    "routes": ["/api/gallery-files/v1", "/api/gallery-publications/v1"],
+    "scheduled": true,
+    "bindings": [
+      { "binding": "GALLERY_FILES", "type": "r2", "resource": "galleryFilesBucket" },
+      { "binding": "GALLERY_PUBLIC", "type": "r2", "resource": "galleryPublicBucket" },
+      { "binding": "IMAGES", "type": "images" }
+    ],
+    "vars": [{ "name": "GALLERY_PUBLIC_ORIGIN", "resource": "galleryPublicOrigin" }]
+  },
+  "publicWorker": { "directory": "./public", "name": "gallery" },
+  "refreshKeys": ["app:gallery"]
+}

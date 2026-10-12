@@ -1,0 +1,46 @@
+{
+  "name": "@hearthlog/module-gallery",
+  "version": "1.0.0",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": {
+    "./hearthlog.module.json": "./hearthlog.module.json",
+    "./pages/*.js": "./src/pages/*.ts",
+    "./pages/*.svelte": "./src/pages/*.svelte",
+    "./data/*.js": "./src/data/*.ts",
+    "./server/*.js": "./src/server/*.ts",
+    "./startup.js": "./src/startup.ts"
+  },
+  "dependencies": {
+    "bits-ui": "^2.19.3",
+    "date-fns": "^4.4.0",
+    "idb": "^8.0.3",
+    "kysely": "^0.29.6"
+  },
+  "peerDependencies": {
+    "@hearthlog/sdk": ">=0.1.0 <0.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hearthlog/hearthlog-module-gallery.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "files": [
+    "src",
+    "public",
+    "hearthlog.module.json",
+    "!**/*.test.ts"
+  ],
+  "packageManager": "pnpm@10.32.1",
+  "scripts": {
+    "test": "hearthlog check-module"
+  },
+  "devDependencies": {
+    "@hearthlog/sdk": ">=0.1.0 <0.2.0",
+    "@hearthlog/tooling": ">=0.1.0 <0.2.0",
+    "vitest": "^4.1.11"
+  }
+}
