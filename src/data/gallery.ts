@@ -111,6 +111,16 @@ export function createGalleryRepository(session: ReadModelSession) {
         THEN MIN(MAX(p.width / p.height, ${MIN_TILE_RATIO}), ${MAX_TILE_RATIO}) ELSE 1.0 END`;
 
     return {
+        /** Photos imported in `[from, until)`, both ISO instants like `imported_at`. */
+        async countImported(from: string, until: string): Promise<number> {
+            const result = await withTimeout(session.execute(sql<{ count: number | string | null }>`
+                SELECT COUNT(*) AS count
+                FROM ${session.table('gallery_photos')} AS p
+                WHERE p.imported_at >= ${from} AND p.imported_at < ${until}
+            `), DB_TIMEOUT_MS, 'Gallery import count query timed out');
+            return Number(result.rows[0]?.count ?? 0);
+        },
+
         /**
          * The timeline's blocks, its months for the spine, and its photo count.
          * Private timelines read newest first; public publication reads keep
