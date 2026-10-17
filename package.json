@@ -1,6 +1,6 @@
 {
   "name": "@hearthlog/module-gallery",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "license": "AGPL-3.0-only",
   "type": "module",
   "exports": {
@@ -19,7 +19,7 @@
     "kysely": "^0.29.6"
   },
   "peerDependencies": {
-    "@hearthlog/sdk": ">=0.1.0 <0.2.0 || 0.2.0"
+    "@hearthlog/sdk": ">=0.1.0 <0.2.0 || 0.2.0 || 0.3.1"
   },
   "repository": {
     "type": "git",
@@ -40,8 +40,8 @@
     "test": "hearthlog check-module"
   },
   "devDependencies": {
-    "@hearthlog/sdk": ">=0.1.0 <0.2.0 || 0.2.0",
-    "@hearthlog/tooling": ">=0.1.0 <0.2.0 || 0.2.0",
+    "@hearthlog/sdk": ">=0.1.0 <0.2.0 || 0.2.0 || 0.3.1",
+    "@hearthlog/tooling": ">=0.1.0 <0.2.0 || 0.2.0 || 0.3.1",
     "vitest": "^4.1.11"
   }
 }
