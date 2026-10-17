@@ -9,7 +9,8 @@
     "./pages/*.svelte": "./src/pages/*.svelte",
     "./data/*.js": "./src/data/*.ts",
     "./server/*.js": "./src/server/*.ts",
-    "./startup.js": "./src/startup.ts"
+    "./startup.js": "./src/startup.ts",
+    "./attention.js": "./src/attention.ts"
   },
   "dependencies": {
     "bits-ui": "^2.19.3",

@@ -32,6 +32,7 @@
   },
   "projectionVersion": 1,
   "startup": "./src/startup.ts",
+  "attention": "./src/attention.ts",
   "server": {
     "entry": "./src/server/index.ts",
     "routes": [
