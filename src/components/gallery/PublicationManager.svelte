@@ -313,7 +313,7 @@
                 </fieldset>
                 {#if !targetId && publications.length > 0}
                     <label class="block font-medium">Publish as
-                        <select bind:value={targetId} disabled={busy || Boolean(pending)} class="mt-1 h-11 w-full rounded-xl border border-[var(--stor-field-border)] bg-[var(--stor-surface-muted)] px-3 text-[var(--stor-ink)] sm:h-9">
+                        <select bind:value={targetId} disabled={busy || Boolean(pending)} class="stor-field-control mt-1 h-11 w-full px-3 sm:h-9">
                             <option value="">New public gallery</option>
                             {#each publications as item (item.id)}<option value={item.id}>Update {item.title}</option>{/each}
                         </select>
