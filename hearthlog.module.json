@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "org.stor.gallery",
   "package": "@hearthlog/module-gallery",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "compatibility": {
     "moduleApi": 1
   },
