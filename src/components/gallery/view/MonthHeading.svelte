@@ -33,7 +33,7 @@
         gap: 10px;
         margin-inline: calc(var(--gallery-inset-start, 0px) * -1) calc(var(--gallery-inset-end, 0px) * -1);
         padding-inline: var(--gallery-inset-start, 0px) var(--gallery-inset-end, 0px);
-        background: var(--stor-surface);
+        background: var(--stor-bg);
     }
     .gallery-month-title {
         margin: 0;

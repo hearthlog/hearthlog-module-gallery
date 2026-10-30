@@ -281,7 +281,7 @@
         align-items: center;
         gap: 10px;
         padding-inline: var(--gallery-inset-start) var(--gallery-inset-end);
-        background: var(--stor-surface);
+        background: var(--stor-bg);
         pointer-events: none;
     }
     .gallery-continued-title { font-size: 20px; line-height: 1.1; color: var(--stor-ink); }
