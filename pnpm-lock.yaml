@@ -22,11 +22,11 @@ importers:
         version: 0.29.6
     devDependencies:
       '@hearthlog/sdk':
-        specifier: 0.5.0 || 0.6.0 || 0.9.0 || 0.10.1 || 0.10.2 || 0.11.0 || 0.11.1 || 0.12.0 || 0.13.0
-        version: 0.5.0(@internationalized/date@3.12.4)(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(workbox-core@7.4.1)(workbox-expiration@7.4.1)(workbox-precaching@7.4.1)(workbox-routing@7.4.1)(workbox-strategies@7.4.1)
+        specifier: ^0.13.0
+        version: 0.13.0(@internationalized/date@3.12.4)(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(workbox-core@7.4.1)(workbox-expiration@7.4.1)(workbox-precaching@7.4.1)(workbox-routing@7.4.1)(workbox-strategies@7.4.1)
       '@hearthlog/tooling':
-        specifier: 0.5.0 || 0.6.0 || 0.9.0 || 0.10.1 || 0.10.2 || 0.11.0 || 0.11.1 || 0.12.0 || 0.13.0
-        version: 0.5.0(86344c1f1d804dc8e64a35a6e11e8349)
+        specifier: ^0.13.0
+        version: 0.13.0(86344c1f1d804dc8e64a35a6e11e8349)
       vitest:
         specifier: ^4.1.11
         version: 4.1.12(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
@@ -204,22 +204,22 @@ packages:
   '@floating-ui/utils@0.2.12':
     resolution: {integrity: sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww==}
 
-  '@hearthlog/cloudflare@0.5.0':
-    resolution: {integrity: sha512-PvpIc6kBK1+YnhJBUAvFazI8I094i/MNXb81HcpxVzMCZAUCjRj5/pVuNS0HoESfXiVxy2iwhQ/au7ER8iz+dg==}
+  '@hearthlog/cloudflare@0.13.0':
+    resolution: {integrity: sha512-vvlY579f26n5TBp5kWWKeQeK237gPTqbK2KQvpeFGgEMUD6YDiJZFAYNf2hBqw4G+B1LMWoFR3pywl4YJa79+w==}
 
-  '@hearthlog/contracts@0.5.0':
-    resolution: {integrity: sha512-M20o/ZBXc+jn93zCkh5Z8BSIaU0wBCl2kJGHC51Jyf8jgSfkNLekJyRBb5Wr+frw7WXatJfJUF1XKaUCieC8yQ==}
+  '@hearthlog/contracts@0.13.0':
+    resolution: {integrity: sha512-M/QHAx0y67hwAHexInTt2Fpxm+pHrLrn7GZnZQButpYpSIwx1TkSbvW2CFo1nTyZpMuGph7WFTvx/i6CorGKYA==}
     peerDependencies:
       '@hearthlog/generated': '*'
     peerDependenciesMeta:
       '@hearthlog/generated':
         optional: true
 
-  '@hearthlog/czech@0.5.0':
-    resolution: {integrity: sha512-qS4C3u7KkfLPBGY38J6cRjXxQhwTE+Y/4gCOvwzCZUS+QGxSUF+u1O6XgZdXrPKRmKyE7iBTzbqO4MuR9PdA4w==}
+  '@hearthlog/czech@0.13.0':
+    resolution: {integrity: sha512-+0V+RT8uBdZZgkpR2pFALpoEpeQtz9LCeHx1d4Y7Ur40+kVHWCvvD+jxAZBKT2+baBdh1QrE2xuxzHSkRz0wlw==}
 
-  '@hearthlog/runtime@0.5.0':
-    resolution: {integrity: sha512-q85RhGM8Ht3x5jOiSmKnygAxXXxmo+UQl27tU+jmu4ZTAiJVLU+j9X2Yv37KyR1IsWCSEAErAIce3DsnnD/LSg==}
+  '@hearthlog/runtime@0.13.0':
+    resolution: {integrity: sha512-jLBwFpORsWxdoC/3gkCfq7vf3n9ygDnZDbu6mKE+ZrfD2BG9Sdw/zkk7zoDNO77Q29m3ghNWDkmncdYMVdNtvA==}
     peerDependencies:
       '@hearthlog/generated': '*'
       '@sveltejs/kit': ^3.0.0
@@ -228,16 +228,16 @@ packages:
       '@hearthlog/generated':
         optional: true
 
-  '@hearthlog/sdk@0.5.0':
-    resolution: {integrity: sha512-njBcb3Flv2nzFPjwi+nBceE6K/ae5VFrugVyUQhDB6mYTno20Jvp8UfYfWE9xoHASnu+0x6UaVpc78rhmzFhUQ==}
+  '@hearthlog/sdk@0.13.0':
+    resolution: {integrity: sha512-bzDceIzxB49cTFWV9ualcyW4ucNr3QIACRhgYaZpIiosg9Hwhr6jNtF0WxF7P8TA8S515LniHLq+P6B3dz9WkA==}
     peerDependencies:
       '@hearthlog/generated': '*'
     peerDependenciesMeta:
       '@hearthlog/generated':
         optional: true
 
-  '@hearthlog/shell@0.5.0':
-    resolution: {integrity: sha512-GxJ7VVLkuWQkDOBO41SOmfOgaZ7+7lvgJhtTpyIyOukWkIdt0HUt7Hl6MiIUKJL3/6WJuB8L8VqWRVQ8d1K+DQ==}
+  '@hearthlog/shell@0.13.0':
+    resolution: {integrity: sha512-RzmXG5OW7mfR5+qOWAjQVAZxE41peMhOHK6iOWPHHL1N5fPHYNor8pk73h2+9Tva1vyaRZa+w1JLIunopnOVJQ==}
     peerDependencies:
       '@hearthlog/generated': '*'
       '@sveltejs/kit': ^3.0.0
@@ -251,8 +251,8 @@ packages:
       '@hearthlog/generated':
         optional: true
 
-  '@hearthlog/tooling@0.5.0':
-    resolution: {integrity: sha512-a+ghZZ6tck/jP8KFdrp6STu4Po98xtewRpF/mP8zYzANS59qJ2iU9Z2BwES9weLvdDkPK3BGzNS7Jv9DZODQkA==}
+  '@hearthlog/tooling@0.13.0':
+    resolution: {integrity: sha512-nGtj6pv7PJkmyO0oyvUcJg2GQ5yc26Cw/vE8UuSQNw5MfFWHS5ZziDR4m92Di+xEAykRtr9EoD2O5+ehijqUpg==}
     hasBin: true
     peerDependencies:
       '@hearthlog/generated': '*'
@@ -279,8 +279,8 @@ packages:
       wrangler:
         optional: true
 
-  '@hearthlog/ui@0.5.0':
-    resolution: {integrity: sha512-t/IXd8AgiHrRcNCtv+ZRfpnamMDqeCRgeAj8Do4p/zz+gxaQmR5+cO4pXN5xziah6XXJCZnxVxyknDnB00INLA==}
+  '@hearthlog/ui@0.13.0':
+    resolution: {integrity: sha512-gCznqHJUdYIkoyOE9p2sk8VSQgjTk9tj1Zs5JgYq+Eb1ji9cp/WC1HLSFiqhF7tXNO86iRkExWjrKiCOP988AA==}
     peerDependencies:
       svelte: ^5.57.1
 
@@ -416,6 +416,9 @@ packages:
 
   '@rolldown/pluginutils@1.0.1':
     resolution: {integrity: sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw==}
+
+  '@sinclair/typebox@0.34.52':
+    resolution: {integrity: sha512-XiMQh7qqVlxZzcVD+kkGMNGMzcTrDMLWI7S4x7z1MkCkbDPrekpZXEUK0eZqZFMuHQg2a2DZOcDIh9o5v3Gonw==}
 
   '@sqlite.org/sqlite-wasm@3.51.2-build9':
     resolution: {integrity: sha512-tj2Sa6X4gVZqS9SiT2xlEeChSUklSGq8Hz6zKNbHW6NRiGyrSXiFcspnrWru1wPBT76RX/VxweESKxawCxfDxg==}
@@ -1388,21 +1391,22 @@ snapshots:
 
   '@floating-ui/utils@0.2.12': {}
 
-  '@hearthlog/cloudflare@0.5.0':
+  '@hearthlog/cloudflare@0.13.0':
     dependencies:
-      '@hearthlog/contracts': 0.5.0
+      '@hearthlog/contracts': 0.13.0
       jose: 6.2.12
     transitivePeerDependencies:
       - '@hearthlog/generated'
 
-  '@hearthlog/contracts@0.5.0': {}
+  '@hearthlog/contracts@0.13.0': {}
 
-  '@hearthlog/czech@0.5.0': {}
+  '@hearthlog/czech@0.13.0': {}
 
-  '@hearthlog/runtime@0.5.0(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))':
+  '@hearthlog/runtime@0.13.0(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))':
     dependencies:
-      '@hearthlog/contracts': 0.5.0
-      '@hearthlog/ui': 0.5.0(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)
+      '@hearthlog/contracts': 0.13.0
+      '@hearthlog/ui': 0.13.0(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)
+      '@sinclair/typebox': 0.34.52
       '@sveltejs/kit': 3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
       date-fns: 4.4.0
       idb: 8.0.4
@@ -1418,13 +1422,14 @@ snapshots:
       - vite
       - vue
 
-  '@hearthlog/sdk@0.5.0(@internationalized/date@3.12.4)(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(workbox-core@7.4.1)(workbox-expiration@7.4.1)(workbox-precaching@7.4.1)(workbox-routing@7.4.1)(workbox-strategies@7.4.1)':
+  '@hearthlog/sdk@0.13.0(@internationalized/date@3.12.4)(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(workbox-core@7.4.1)(workbox-expiration@7.4.1)(workbox-precaching@7.4.1)(workbox-routing@7.4.1)(workbox-strategies@7.4.1)':
     dependencies:
-      '@hearthlog/cloudflare': 0.5.0
-      '@hearthlog/contracts': 0.5.0
-      '@hearthlog/runtime': 0.5.0(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
-      '@hearthlog/shell': 0.5.0(@internationalized/date@3.12.4)(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(workbox-core@7.4.1)(workbox-expiration@7.4.1)(workbox-precaching@7.4.1)(workbox-routing@7.4.1)(workbox-strategies@7.4.1)
-      '@hearthlog/ui': 0.5.0(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)
+      '@hearthlog/cloudflare': 0.13.0
+      '@hearthlog/contracts': 0.13.0
+      '@hearthlog/runtime': 0.13.0(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
+      '@hearthlog/shell': 0.13.0(@internationalized/date@3.12.4)(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(workbox-core@7.4.1)(workbox-expiration@7.4.1)(workbox-precaching@7.4.1)(workbox-routing@7.4.1)(workbox-strategies@7.4.1)
+      '@hearthlog/ui': 0.13.0(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)
+      '@sinclair/typebox': 0.34.52
     transitivePeerDependencies:
       - '@angular/core'
       - '@internationalized/date'
@@ -1442,12 +1447,12 @@ snapshots:
       - workbox-routing
       - workbox-strategies
 
-  '@hearthlog/shell@0.5.0(@internationalized/date@3.12.4)(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(workbox-core@7.4.1)(workbox-expiration@7.4.1)(workbox-precaching@7.4.1)(workbox-routing@7.4.1)(workbox-strategies@7.4.1)':
+  '@hearthlog/shell@0.13.0(@internationalized/date@3.12.4)(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))(workbox-core@7.4.1)(workbox-expiration@7.4.1)(workbox-precaching@7.4.1)(workbox-routing@7.4.1)(workbox-strategies@7.4.1)':
     dependencies:
-      '@hearthlog/contracts': 0.5.0
-      '@hearthlog/czech': 0.5.0
-      '@hearthlog/runtime': 0.5.0(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
-      '@hearthlog/ui': 0.5.0(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)
+      '@hearthlog/contracts': 0.13.0
+      '@hearthlog/czech': 0.13.0
+      '@hearthlog/runtime': 0.13.0(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
+      '@hearthlog/ui': 0.13.0(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)
       '@sveltejs/kit': 3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
       '@tanstack/svelte-table': 9.3.1(svelte@5.57.2)
       bits-ui: 2.19.5(@internationalized/date@3.12.4)(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)
@@ -1468,9 +1473,9 @@ snapshots:
       - vite
       - vue
 
-  '@hearthlog/tooling@0.5.0(86344c1f1d804dc8e64a35a6e11e8349)':
+  '@hearthlog/tooling@0.13.0(86344c1f1d804dc8e64a35a6e11e8349)':
     dependencies:
-      '@hearthlog/contracts': 0.5.0
+      '@hearthlog/contracts': 0.13.0
       '@iconify/json': 2.2.544
       '@sveltejs/adapter-static': 4.0.0(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))
       '@sveltejs/kit': 3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15))
@@ -1489,7 +1494,7 @@ snapshots:
       workbox-routing: 7.4.1
       workbox-strategies: 7.4.1
 
-  '@hearthlog/ui@0.5.0(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)':
+  '@hearthlog/ui@0.13.0(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)))(svelte@5.57.2)':
     dependencies:
       '@internationalized/date': 3.12.4
       '@tanstack/svelte-table': 9.3.1(svelte@5.57.2)
@@ -1589,6 +1594,8 @@ snapshots:
     optional: true
 
   '@rolldown/pluginutils@1.0.1': {}
+
+  '@sinclair/typebox@0.34.52': {}
 
   '@sqlite.org/sqlite-wasm@3.51.2-build9': {}
 
