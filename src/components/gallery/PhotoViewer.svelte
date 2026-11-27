@@ -172,7 +172,7 @@
                         <DropdownMenu.Portal>
                             <DropdownMenu.Content side="bottom" align="end" sideOffset={4} class="stor-menu z-[var(--stor-layer-menu)] w-48 py-1">
                                 <DropdownMenu.Item class="flex cursor-default items-center gap-2 px-3 py-2 text-sm text-[var(--stor-ink)] outline-none data-[highlighted]:bg-[var(--stor-surface-muted)]" onSelect={() => void downloadOriginal()}><IconDownload class="h-4 w-4" /> Download original</DropdownMenu.Item>
-                                <DropdownMenu.Separator class="my-1 h-px bg-[var(--stor-border)]" />
+                                <DropdownMenu.Separator class="h-2" />
                                 <CommandOnly>
                                     <DropdownMenu.Item class="flex cursor-default items-center gap-2 px-3 py-2 text-sm text-[var(--stor-ink)] outline-none data-[highlighted]:bg-[var(--stor-surface-muted)]" onSelect={onEdit}><IconPencil class="h-4 w-4" /> Edit photo</DropdownMenu.Item>
                                     <DropdownMenu.Item class="flex cursor-default items-center gap-2 px-3 py-2 text-sm text-[var(--stor-negative)] outline-none data-[highlighted]:bg-[var(--stor-surface-muted)]" onSelect={onRemove}><IconDelete class="h-4 w-4" /> Remove photo</DropdownMenu.Item>
