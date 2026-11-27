@@ -711,7 +711,7 @@
     <div class="space-y-4 text-sm text-[var(--stor-ink)]">
         <p>Save your original photos and albums to a private archive. It includes filenames and camera location data when present.</p>
         <Button variant="secondary" disabled={backupBusy} onclick={() => void downloadBackup()}><IconArchive class="h-4 w-4" /> Download backup</Button>
-        <div class="border-t border-[var(--stor-border)] pt-4">
+        <div class="pt-4">
             <label class="block font-medium" for="gallery-restore-file">Restore into this log</label>
             <input id="gallery-restore-file" type="file" accept=".tar,application/x-tar" class="mt-2 block w-full text-sm" disabled={backupBusy} onchange={(event) => void previewBackup(event.currentTarget.files?.[0])} />
             {#if restoreCounts}

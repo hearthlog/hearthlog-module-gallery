@@ -131,7 +131,6 @@
         overflow: hidden;
         border-radius: 999px;
         background: var(--stor-surface-muted);
-        box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--stor-border) 60%, transparent);
         padding: 5px 10px;
         color: var(--stor-muted-text);
         font-size: 11.5px;
@@ -149,7 +148,7 @@
         flex: none;
         place-items: center;
         border-radius: 999px;
-        box-shadow: inset 0 0 0 1.5px var(--stor-border);
+        box-shadow: inset 0 0 0 1.5px var(--stor-field-line);
         color: transparent;
     }
     .gallery-month-check[aria-pressed='true'] { background: var(--stor-accent); box-shadow: none; color: var(--stor-action-text, #fff); }

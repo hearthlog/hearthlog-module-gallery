@@ -278,7 +278,7 @@
     {#if publications.length === 0}
         <EmptyState icon={IconImage} title="No shared galleries" description="Select photos or open an album to prepare an unlisted public gallery." />
     {:else}
-        <div class="stor-panel divide-y divide-[var(--stor-border)] px-3 sm:px-4">
+        <div class="stor-panel px-3 sm:px-4">
             {#each publications as item (item.id)}
                 <div class="flex flex-wrap items-center gap-3 py-4">
                     <div class="min-w-0 flex-1">
